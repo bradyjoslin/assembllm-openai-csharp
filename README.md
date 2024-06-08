@@ -37,3 +37,17 @@ Test release:
 ```bash
 make test_release
 ```
+
+## Add to assembllm
+
+Sample configuration update to `~/.assembllm/config.yaml`:
+
+```yaml
+  - name: openaicsharp
+    source: https://github.com/bradyjoslin/assembllm-openai-csharp/releases/latest/download/assembllm_openai-csharp.wasm
+    hash: 
+    apiKey: OPENAI_API_KEY
+    url: api.openai.com
+    model: gpt-4o
+    wasi: true
+```
